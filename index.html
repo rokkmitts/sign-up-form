@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="sidebar">
+        <div class="logo-container">
+          <div class="logo-image">
+            <img src="assets/img2.png" alt="The odin Project logo" />
+          </div>
+          <h1>ODIN</h1>
+        </div>
+      </div>
+
+      <div class="content">
+        <header>
+          <h3>
+            <strong
+              >This is not a real online service! You know you need something like
+              this in your life to help you realize your deepest dreams. sign up
+              <i>now</i> to get started.</strong
+            >
+          </h3>
+          <h3>You <i>know</i> you want to.</h3>
+        </header>
+
+        <form action="#" method="post">
+          <p><strong>Let's do this!</strong></p>
+
+        <div class="content-inform">
+          <div class="information">
+          <label for="firstname">FIRST NAME
+          </label>
+            <Input name="firstname" id="firstname" type="text"></Input>
+          
+          <label for="lastname">LAST NAME
+          </label>
+            <input name="lastname" type="text" id="lastname">
+          
+          <label for="phone">PHONE NUMBER
+          </label>             
+            <input name="phone" type="tel" id="phone">
+          </div>
+
+        <div class="secure">
+          <label for="email">EMAIL
+          </label>
+            <input name="email" type="email" id="email" required>
+
+          <label for="pass">PASSWORD
+          </label>
+            <input onkeyup="validate_password()" name="password" type="password" id="pass" class="" required>
+            <span class="message"></span>
+
+          <label for="confirm-pass">CONFIRM PASSWORD
+          </label>
+            <input onkeyup="validate_password()" name="password" type="password" id="confirm-pass" class="" required>
+            <span class="message"></span>
+        </div>
+      </div>
+        
+      <div class="form request">
+        <button id="sub-button" type="submit">Create Account</button>
+        <h4>Already have an account? <a href="#">Log in</a></h4>
+      </div>
+    </form>
+      </div>
+    </div>
+  </body>
+</html>
